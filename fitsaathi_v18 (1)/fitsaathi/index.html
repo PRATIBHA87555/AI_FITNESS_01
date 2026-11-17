@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitSaathi – AI fitness coach that knows your body</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/theme.js"></script>
+</head>
+<body>
+<div class="wrap">
+<nav>
+  <a class="logo" href="#top">Fit<b>Saathi</b></a>
+  <div class="nav-r"><a class="h" href="#health">Health</a><a class="h" href="#features">Features</a>
+<a class="h" href="demos.html">Videos</a>
+<a class="h" href="experts.html">Doctors</a><a class="btn" href="plan.html">Start free</a></div>
+</nav>
+
+<header class="hero" id="top">
+  <div>
+    <span class="eyebrow">AI fitness coach for India</span>
+    <h1>Train smart around your body, not against it.</h1>
+    <p class="lead">FitSaathi builds your workout and meal plan from your goals, your medical history and your posture. Every exercise is checked for safety before it reaches you.</p>
+    <div class="cta"><a class="btn" href="plan.html">Build my plan</a><a class="btn ghost" href="demos.html">Watch exercise videos</a></div>
+    <p class="trust">Indian meals, Hindi and English, works on any phone. Your health data stays private.</p>
+  </div>
+  <div class="heroPhoto" id="posture"><img src="assets/squat.jpg" alt="Group doing lunges in a gym"></div>
+</header>
+</div>
+
+<section class="photoBand" aria-label="Strength training"><div class="wrap"><div class="pb">
+  <img src="assets/hero-lift.jpg" alt="Athlete lifting a barbell in a gym" loading="lazy" onerror="this.closest('.photoBand').remove()">
+  <div class="pbTxt"><span class="eyebrow">Strength, done safely</span><h2>Lift smart. Stay injury-free.</h2><p>Form tips, safe swaps and a coach that watches your reps.</p><a class="btn" href="plan.html">Build my plan</a></div>
+</div></div></section>
+
+<section class="strip"><div class="wrap stats"><div><b>27</b><span>exercise video demos</span></div><div><b>6</b><span>camera posture checks</span></div><div><b>EN + Hinglish</b><span>AI coach in your language</span></div><div><b>Doctors</b><span>and trainers, online</span></div></div></section>
+
+<section id="how"><div class="wrap"><span class="eyebrow">How it works</span><h2>Three steps to a safer start.</h2>
+<div class="grid3"><div class="card step"><i>1</i><h3>Tell us about you</h3><p>Your goal, body, health conditions and diet, in about two minutes.</p></div>
+<div class="card step"><i>2</i><h3>Get your safe plan</h3><p>Workouts and Indian meals, with unsafe exercises swapped automatically.</p></div>
+<div class="card step"><i>3</i><h3>Train with a coach</h3><p>Use the camera posture coach, track progress and ask the AI assistant.</p></div></div></div></section>
+
+<section id="features"><div class="wrap"><span class="eyebrow">Features</span><h2>Everything you need, in one place.</h2>
+<div class="grid3">
+<a class="card feat" href="plan.html"><div class="ico">📋</div><h3>Personal plan</h3><p>Workout and meal plan with calorie and protein targets.</p></a>
+<a class="card feat" href="plan.html"><div class="ico">📷</div><h3>Camera posture coach</h3><p>Counts reps and corrects your form live, with voice tips.</p></a>
+<a class="card feat" href="plan.html"><div class="ico">⚖️</div><h3>Weight status</h3><p>Know if you are underweight, healthy or overweight, and your target range.</p></a>
+<a class="card feat" href="experts.html"><div class="ico">🩺</div><h3>Doctors and trainers</h3><p>Online doctors and trainers matched to your health needs.</p></a>
+<a class="card feat" href="demos.html"><div class="ico">🎬</div><h3>Video library</h3><p>27 exercises with demos, cues and common mistakes.</p></a>
+<a class="card feat" href="plan.html"><div class="ico">💬</div><h3>AI assistant</h3><p>Ask in English or Hinglish. Type or speak.</p></a>
+</div></div></section>
+
+<section id="health"><div class="wrap two">
+  <div>
+    <span class="eyebrow">Health-safe plans</span>
+    <h2>Your plan changes when your health does.</h2>
+    <p class="lead" style="margin-top:16px">Tell us about injuries and conditions once. Unsafe exercises are swapped automatically, before any AI suggestion is shown.</p>
+    <div class="chips" role="group" aria-label="Health conditions" id="chips"></div>
+    <div id="note"></div>
+  </div>
+  <div class="card" id="plan" aria-live="polite"></div>
+</div></section>
+
+<section id="videos"><div class="wrap"><div class="cta-band"><div><span class="eyebrow">Video library</span><h2>See every exercise done right.</h2><p class="lead">27 exercises with demo videos, form cues and common mistakes.</p></div><a class="btn" href="demos.html">Open video library</a></div></div></section>
+
+<section id="start"><div class="wrap">
+  <span class="eyebrow">Progress dashboard</span>
+  <h2>Your week, at a glance.</h2>
+  <p class="lead" style="margin-top:16px">One screen shows what to do today and how far you have come.</p>
+  <div class="dash" id="dashLive">
+    <div class="card" style="text-align:center">
+      <svg class="ring" viewBox="0 0 130 130" role="img" aria-label="72 percent of weekly goal"><circle cx="65" cy="65" r="54" stroke="var(--mint)"/><circle cx="65" cy="65" r="54" stroke="var(--brand)" stroke-dasharray="244 340" transform="rotate(-90 65 65)"/></svg>
+      <div class="big">72%</div><p class="lead" style="font-size:.95rem;margin:4px auto 0">of weekly goal</p>
+    </div>
+    <div class="card"><div class="big">12</div><p class="lead" style="font-size:.95rem">day streak</p><p style="margin-top:18px;font-weight:600">Posture score</p><div class="big" style="color:var(--good)">84</div><p class="lead" style="font-size:.9rem">up 6 from last week</p></div>
+    <div class="card"><h3>Workouts this week</h3><div class="bars" aria-hidden="true"><i style="height:60%" class="on"><span>M</span></i><i style="height:85%" class="on"><span>T</span></i><i style="height:40%"><span>W</span></i><i style="height:95%" class="on"><span>T</span></i><i style="height:70%" class="on"><span>F</span></i><i style="height:30%"><span>S</span></i><i style="height:20%"><span>S</span></i></div><div style="height:22px"></div></div>
+  </div>
+  <div style="margin-top:36px"><a class="btn" href="plan.html">Build my plan</a></div>
+</div></section>
+
+<footer><div class="wrap fcols"><div><a class="logo" href="index.html">Fit<b>Saathi</b></a><p>AI fitness coach for India: safe plans, posture checks and expert guidance.</p></div><div><h4>Explore</h4><a href="plan.html">Build my plan</a><a href="demos.html">Video library</a><a href="experts.html">Doctors and trainers</a></div><div><h4>Safety</h4><p>FitSaathi gives fitness guidance, not medical advice. If you have a heart condition, are pregnant or recovering from surgery, talk to your doctor first. Posture feedback is approximate.</p></div></div></footer>
+
+<script src="js/app.js"></script>
+<script src="js/tracker.js"></script>
+<script src="js/videos.js"></script>
+<script src="js/exdemo.js"></script>
+<script src="js/coach.js"></script>
+<script src="js/posture.js"></script>
+<script src="js/experts.js"></script>
+<script src="js/health.js"></script>
+<script src="js/localai.js"></script>
+<script src="js/assistant.js"></script>
+</body>
+</html>
